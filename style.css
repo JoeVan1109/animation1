@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+
+.button{
+    font-family: 'Fuggles', cursive;
+    background-color: #1c87c9;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    font-size: 150px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    animation-name: glowing;
+    animation-duration: 3s;
+    background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+}
+
+
+
+@keyframes glowing{
+    0%{
+        background-color: #6cb8ea;
+        box-shadow: 0 0 50px #29d0be;
+        transform: scale(0) rotate(0deg);
+    }
+    50%{
+        background-color: #ff5959;
+        box-shadow: 0 0 80px #e1f549;
+        transform: scale(0.5) rotate(50deg);
+    }
+    100%{
+        background-color: aquamarine;
+        box-shadow: 0 0 50px #1c87c9;
+        transform: scale(1.5) rotate(360deg);
+    }
+}
+
